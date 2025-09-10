@@ -156,4 +156,5 @@ When you scale services, you don’t want clients to hardcode server addresses.
     ✅ Service Discovery (DNS, Consul, Kubernetes)
 
 
-
+INFO  :
+https://chatgpt.com/share/68c14267-d8d0-8004-b5b6-2d8e8a4e11a2
