@@ -118,6 +118,13 @@ On the server, you can check context to stop work early.
         codes.DeadlineExceeded → Timeout
         
         codes.Unavailable → Service down
-    
+<img width="615" height="494" alt="image" src="https://github.com/user-attachments/assets/132a08cb-6a4b-4741-8aab-09db17971f8a" />
+
+Summary : 
+    Interceptors (logging, auth, retry)
+    Deadlines & Timeouts
+    Error Handling with status codes
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+gRPC Authentication & Security and then move to Load Balancing & Service Discovery.
 
 
