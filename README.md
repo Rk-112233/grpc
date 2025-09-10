@@ -127,4 +127,33 @@ Summary :
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 gRPC Authentication & Security and then move to Load Balancing & Service Discovery.
 
+🔹 1. gRPC Authentication & Security
+
+    By default, gRPC uses HTTP/2 over TCP. For security, we add TLS or custom auth (JWT, API keys).
+    
+    ✅ a) TLS with gRPC
+    
+    TLS ensures encrypted communication between client & server.
+<img width="632" height="521" alt="image" src="https://github.com/user-attachments/assets/80c95764-5929-4e0f-a3fc-6c3538d19875" />
+
+    ✅ b) Token / API Key Authentication
+    
+    We can use Interceptors to enforce authentication.
+<img width="613" height="512" alt="image" src="https://github.com/user-attachments/assets/c9e9eb31-d2ea-495f-a684-5ae6615ed397" />
+<img width="588" height="173" alt="image" src="https://github.com/user-attachments/assets/8c384944-bc49-4c9a-9121-74993df5aae7" />
+
+🔹 2. Load Balancing & Service Discovery in gRPC
+
+When you scale services, you don’t want clients to hardcode server addresses.
+<img width="610" height="434" alt="image" src="https://github.com/user-attachments/assets/5aff5e18-a7ce-432e-9ce8-e7f333abb910" />
+<img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/449d1171-b22f-41b6-82c4-977f9ca7d914" />
+🔹 Summary
+    
+    We now covered:
+    ✅ TLS/SSL security
+    ✅ API Key & JWT Auth with interceptors
+    ✅ Client-side Load Balancing (Round Robin)
+    ✅ Service Discovery (DNS, Consul, Kubernetes)
+
+
 
