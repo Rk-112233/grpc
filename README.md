@@ -60,14 +60,64 @@
         Reflection → debugging with tools like grpcurl.
 
 🔹 8. Summary : 
-UnaryHello → single request & response.
+        UnaryHello → single request & response.
+        
+        ServerStreamHello → one request, multiple responses.
+        
+        ClientStreamHello → multiple requests, one response.
+        
+        BidiHello → continuous two-way communication.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Interceptors (middleware in gRPC) next (for logging, authentication, retry etc.) or should we first go deeper into deadlines, timeouts & error handling
 
-ServerStreamHello → one request, multiple responses.
+🔹 1. Interceptors in gRPC (Middleware)
 
-ClientStreamHello → multiple requests, one response.
+👉 Interceptors in gRPC are similar to middlewares in Gin.
+    They allow you to:
 
-BidiHello → continuous two-way communication.
+        Log requests & responses
+        
+        Add authentication / authorization
+        
+        Retry policies
+        
+        Metrics & monitoring
+
+    There are two types:
+
+        Unary Interceptor → For Unary RPCs (one request, one response).
+        
+        Stream Interceptor → For Streaming RPCs (client, server, or bidi streaming).
 
 
+<img width="628" height="451" alt="image" src="https://github.com/user-attachments/assets/20bc3112-ff50-4a7b-af69-b36ad2226b28" />
+<img width="631" height="531" alt="image" src="https://github.com/user-attachments/assets/42fc03b8-7cf6-4ce2-bb4a-8faffad6ff63" />
+
+🔹 2. Deadlines & Timeouts
+
+👉 gRPC lets clients set deadlines so that requests don’t hang forever.
+On the server, you can check context to stop work early.
+<img width="653" height="456" alt="image" src="https://github.com/user-attachments/assets/7db18ef3-eabc-4ce5-b93a-cf07640b13a5" />
+
+🔹 3. Error Handling in gRPC
+
+    gRPC has structured error codes (like HTTP status codes).
+
+    Common ones:
+
+        codes.OK → Success
+        
+        codes.NotFound → Resource not found
+        
+        codes.InvalidArgument → Bad input
+        
+        codes.Unauthenticated → Not logged in
+        
+        codes.PermissionDenied → Unauthorized
+        
+        codes.DeadlineExceeded → Timeout
+        
+        codes.Unavailable → Service down
+    
 
 
