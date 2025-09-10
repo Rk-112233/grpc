@@ -39,5 +39,35 @@
 
 
 
-    
-<img width="729" height="377" alt="image" src="https://github.com/user-attachments/assets/60d02776-38c0-45fa-afcd-70aa9b19319d" />
+<img width="646" height="432" alt="image" src="https://github.com/user-attachments/assets/d92e22cb-aa1a-4f04-8cc5-67081098dd13" />
+
+<img width="714" height="311" alt="image" src="https://github.com/user-attachments/assets/bf9f1bf3-42ea-4ffd-bc1b-f1b9774b526b" />
+<img width="624" height="605" alt="image" src="https://github.com/user-attachments/assets/4949afbd-276c-4ca4-b530-0c0cc2bb23a8" />
+<img width="592" height="553" alt="image" src="https://github.com/user-attachments/assets/1d7557c6-5c28-4277-9b48-63d666af8834" />
+
+🔹 7. Advanced gRPC Concepts
+
+        Deadlines & Timeouts → control request time.
+        
+        Error Handling → gRPC status codes (codes.NotFound, codes.Unauthenticated, etc.).
+        
+        Interceptors → middleware (logging, authentication).
+        
+        TLS/SSL → secure communication.
+        
+        Load Balancing → gRPC supports client-side LB.
+        
+        Reflection → debugging with tools like grpcurl.
+
+🔹 8. Summary : 
+UnaryHello → single request & response.
+
+ServerStreamHello → one request, multiple responses.
+
+ClientStreamHello → multiple requests, one response.
+
+BidiHello → continuous two-way communication.
+
+
+
+
